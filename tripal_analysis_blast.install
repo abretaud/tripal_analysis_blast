@@ -465,6 +465,9 @@ function tripal_analysis_blast_create_entity_type () {
     )
   );
 
+  $mview_id = tripal_get_mview_id('db2cv_mview');
+  tripal_populate_mview($mview_id);
+
   $term = tripal_load_term_entity(array('vocabulary' => 'EDAM', 'accession' => '1333'));
   if ($term) {
       $bundle = tripal_load_bundle_entity(array('term_id' => $term->id));
