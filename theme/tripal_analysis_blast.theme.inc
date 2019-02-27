@@ -39,7 +39,7 @@ function tripal_analysis_blast_preprocess_tripal_feature_blast_results(&$variabl
       'every_page' => TRUE,
       'weight' => 300,
     ));
-    drupal_add_js("https://cdn.rawgit.com/calipho-sib/feature-viewer/v0.1.44/dist/feature-viewer.min.js", array(
+    drupal_add_js("https://cdn.rawgit.com/calipho-sib/feature-viewer/v1.0.4/dist/feature-viewer.min.js"", array(
       'type' => 'external',
       'scope' => 'header',
       'group' => 15,
